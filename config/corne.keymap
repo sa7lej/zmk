@@ -25,14 +25,14 @@
         stashtab: stashtab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LGUI &kp MINUS>;
+            bindings = <&sk LGUI &kp MINUS>;
             label = "STASHTAB";
         };
-        ctrlandk: ctrlandk {
+        channeltab: channeltab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp K>;
-            label = "CTRLANDK";
+            bindings = <&sk LCTRL &kp K>;
+            label = "CHANNELTAB";
         };
     };
 
@@ -77,10 +77,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB       &kp EXCL  &kp AT        &kp HASH              &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp RA(KP_N7)  &kp RA(KP_NUMBER_0)  &kp BSPC
-&kp LCTRL     &trans    &trans        &trans                &stashtab  &ctrlandk    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RA(KP_N8)  &kp RA(KP_N9)        &kp GRAVE
-&kp RA(NUBS)  &kp NUBS  &kp LS(NUHS)  &kp NON_US_BACKSLASH  &trans     &trans       &kp UNDER  &kp PLUS   &kp RS(DOT)      &kp RS(KP_N8)  &kp RS(KP_NUMBER_9)  &kp RIGHT_SHIFT
-                                      &kp LGUI              &trans     &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB       &kp EXCL  &kp AT        &kp HASH              &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp RA(N7)  &kp RA(N0)  &kp BSPC
+&kp LCTRL     &trans    &trans        &trans                &stashtab  &channeltab    &kp MINUS  &kp EQUAL  &kp LBKT         &kp RA(N8)  &kp RA(N9)  &kp GRAVE
+&kp RA(NUBS)  &kp NUBS  &kp LS(NUHS)  &kp NON_US_BACKSLASH  &trans     &trans         &kp UNDER  &kp PLUS   &kp RS(DOT)      &kp RS(N8)  &kp RS(N9)  &kp RIGHT_SHIFT
+                                      &kp LGUI              &trans     &kp SPACE      &kp RET    &trans     &kp RALT
             >;
         };
     };
