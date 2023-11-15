@@ -20,6 +20,7 @@
             hold-trigger-key-positions = <40>;
             tapping-term-ms = <100>;
         };
+
         test: test {
             compatible = "zmk,behavior-hold-tap";
             label = "TEST";
@@ -37,12 +38,14 @@
             bindings = <&sk LGUI &kp FSLH>;
             label = "STASHTAB";
         };
+
         channeltab: channeltab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sk LCTRL &kp K>;
             label = "CHANNELTAB";
         };
+
         printscreen: printscreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -92,10 +95,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB       &kp EXCL  &kp AT        &kp HASH       &kp DLLR        &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp RA(N7)  &kp RA(N0)  &kp BSPC
-&kp RA(NUBS)  &trans    &trans        &trans         &stashtab       &channeltab     &kp MINUS  &kp EQUAL  &kp RA(N2)       &kp RA(N8)  &kp RA(N9)  &kp BACKSLASH
-&kp LCTRL     &kp NUBS  &kp RS(NUBS)  &kp RA(MINUS)  &kp RS(INSERT)  &printscreen    &kp UNDER  &kp PLUS   &kp RS(DOT)      &kp RS(N8)  &kp RS(N9)  &kp RIGHT_SHIFT
-                                      &kp LGUI       &trans          &kp SPACE       &kp RET    &trans     &kp RALT
+&kp TAB       &kp EXCL           &kp AT        &kp HASH       &kp DLLR        &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp RA(N7)  &kp RA(N0)  &kp BSPC
+&kp RA(NUBS)  &kp RIGHT_BRACKET  &trans        &trans         &stashtab       &channeltab     &kp MINUS  &kp EQUAL  &kp RA(N2)       &kp RA(N8)  &kp RA(N9)  &kp BACKSLASH
+&kp LCTRL     &kp NUBS           &kp RS(NUBS)  &kp RA(MINUS)  &kp RS(INSERT)  &printscreen    &kp UNDER  &kp PLUS   &kp RS(DOT)      &kp RS(N8)  &kp RS(N9)  &kp RIGHT_SHIFT
+                                               &kp LGUI       &trans          &kp SPACE       &kp RET    &trans     &kp RALT
             >;
         };
     };
