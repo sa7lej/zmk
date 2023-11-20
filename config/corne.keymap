@@ -93,10 +93,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &kp Q  &kp W  &kp E           &kp R             &kp T        &kp Y       &kp U                   &kp I      &kp O    &kp P     &kp LBKT
-&kp TAB           &kp A  &kp S  &kp D           &left_sys LGUI F  &kp G        &kp H       &left_sys LGUI J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C           &kp V             &kp B        &kp N       &kp M                   &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                                &kp LEFT_SHIFT  &mo 1             &kp SPACE    &kp RETURN  &backspace 2 BACKSPACE  &kp RALT
+&kp ESCAPE        &kp Q  &kp W  &kp E                 &kp R             &kp T        &kp Y       &kp U                   &kp I                  &kp O    &kp P     &kp LBKT
+&kp TAB           &kp A  &kp S  &left_sys LEFT_ALT D  &left_sys LGUI F  &kp G        &kp H       &left_sys LGUI J        &right_sys LEFT_ALT K  &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C                 &kp V             &kp B        &kp N       &kp M                   &kp COMMA              &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                                &kp LEFT_SHIFT        &mo 1             &kp SPACE    &kp RETURN  &backspace 2 BACKSPACE  &kp RALT
             >;
         };
 
@@ -124,7 +124,7 @@
 
             bindings = <
 &kp TAB       &kp EXCL           &kp AT        &kp HASH        &kp DLLR        &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp RA(N7)  &kp RA(N0)  &kp BSPC
-&kp RA(NUBS)  &kp RIGHT_BRACKET  &trans        &trans          &stashtab       &channeltab     &kp MINUS  &kp EQUAL  &kp RA(N2)       &kp RA(N8)  &kp RA(N9)  &kp BACKSLASH
+&kp RA(NUBS)  &kp RIGHT_BRACKET  &kp APOS      &trans          &stashtab       &channeltab     &kp MINUS  &kp EQUAL  &kp RA(N2)       &kp RA(N8)  &kp RA(N9)  &kp BACKSLASH
 &kp LCTRL     &kp NUBS           &kp RS(NUBS)  &kp RA(MINUS)   &kp RS(INSERT)  &printscreen    &kp UNDER  &kp PLUS   &kp RS(DOT)      &kp RS(N8)  &kp RS(N9)  &kp RIGHT_SHIFT
                                                &kp LEFT_SHIFT  &trans          &kp SPACE       &kp RET    &trans     &kp RALT
             >;
